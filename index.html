@@ -7,6 +7,10 @@
       }
     </style>
     <script>
+        function verifyNoteSelection() {
+          var note_question = document.getElementById('note_q').innerHTML;
+          var note_selection = document.getElementById('note_selection').value;
+        }
     </script>
   </head>
   <body>
@@ -30,7 +34,7 @@
             <option value='G'>G</option>
             <option value='G#/Ab'>G#/Ab</option>
           </select>
-          <button type='button'>submit</button>
+          <button type='button' onClick='verifyNoteSelection()'>submit</button>
         </td>
       </tr>
     </table>
